@@ -1,0 +1,8 @@
+<form method="POST">
+    {% csrf_token %}
+    {%for num in form%}
+     <li>
+        {{num}}
+     </li>
+     {%endfor%}
+</form>
